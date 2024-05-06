@@ -4,56 +4,27 @@ This project is a Python script that processes the text of a book and divides it
 
 ## Features
 
-- Input of book text in TXT format (support for FB2 and EPUB is planned in future updates).
-- Splitting the text into sentences.
-- Outputting each sentence on a new line in the resulting text file.
+- Automatically checks for and creates necessary `input` and `output` directories.
+- Interactively allows the user to select a text file from the `input` directory for processing.
+- Outputs each sentence on a new line in a text file located in the `output` directory.
 
 ## Technologies
 
 The project is developed using Python 3.8 and the `nltk` library for natural language processing.
 
+## Directory Structure
+
+- **input/**: Place your text files here. The script will read files from this directory.
+- **output/**: Processed files will be saved here, with each sentence on a new line.
+
 ## Installation and Usage
 
-To use the script, first install the dependencies:
-
+1. **Installation**: Ensure you have Python 3.8 and install the NLTK library:
 pip install nltk
 
-To split a book into sentences, run:
-
-python sentence_splitter.py <path_to_book_file.txt>
-
-The output file will be saved in the same directory as the input file, with a `_sentences` suffix added.
+2. **Running the script**:
+- Run the script from your command line. The script will guide you through selecting a file from the `input` directory and will save the processed file in the `output` directory.
 
 ## License
 
 The project is distributed under the MIT license.
-
-# Разделитель предложений для текстовых книг
-
-Этот проект представляет собой скрипт на Python, который анализирует текст книги и разделяет его на предложения. Каждое предложение выводится на новой строке в текстовом файле. Это может быть полезно для лингвистических исследований, обработки текстов и для создания систем обучения с подкреплением, которым необходимо работать с отдельными предложениями.
-
-## Особенности
-
-- Ввод текста книги в формате TXT (поддержка FB2 и EPUB планируется в будущих обновлениях).
-- Разбиение текста на предложения.
-- Вывод каждого предложения на новой строке в выходном текстовом файле.
-
-## Технологии
-
-Проект разработан с использованием Python 3.8 и библиотеки `nltk` для обработки естественного языка.
-
-## Установка и использование
-
-Для использования скрипта необходимо сначала установить зависимости:
-
-pip install nltk
-
-Для разделения книги на предложения выполните:
-
-python sentence_splitter.py <путь_к_файлу_книги.txt>
-
-Выходной файл будет сохранен в той же директории, что и входной файл, с добавлением суффикса `_sentences`.
-
-## Лицензия
-
-Проект распространяется под лицензией MIT.
