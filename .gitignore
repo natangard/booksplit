@@ -44,3 +44,4 @@ dist/
 
 # tmp artifacts
 *.tmp
+secrets

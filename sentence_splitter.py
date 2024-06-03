@@ -8,6 +8,10 @@ from xml.etree import ElementTree as ET
 # Ensure that the NLTK library is loaded
 nltk.download('punkt')
 
+# Create the 'input' directory if it doesn't exist
+if not os.path.exists('input'):
+    os.makedirs('input')
+
 
 def read_txt(file_path):
     with open(file_path, 'r', encoding='utf-8') as file:
